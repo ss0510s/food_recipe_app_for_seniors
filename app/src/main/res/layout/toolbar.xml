@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_color"
+    app:theme="@style/ActionBarThemeOverlay"
+    android:id="@+id/toolbar">
+
+    <!--툴바에 제목 넣기-->
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="이 요리 어뗘"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/coustom_font"
+        android:layout_gravity="center"
+        android:textSize="50dp"
+        ></TextView>
+</androidx.appcompat.widget.Toolbar>

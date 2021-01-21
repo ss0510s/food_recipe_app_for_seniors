@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".EffectActivity2">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar6"
+        ></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/shadow"
+            android:id="@+id/mainimage"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+        </ImageView>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/quiz"
+            android:textColor="#000000"
+            android:text="quiz"
+            android:textSize="18dp"
+            android:fontFamily="@font/coustom_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/mainimage"
+            ></TextView>
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        android:text="이 음식들은 좋아요!"
+        android:fontFamily="@font/coustom_font"
+        android:textColor="@color/colorAccent"
+        ></TextView>
+        <HorizontalScrollView
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:background="@drawable/black"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"></ImageView>
+
+            <ImageView
+                android:background="@drawable/black"
+                android:id="@+id/image2"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp"></ImageView>
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/image10"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"></ImageView>
+
+            <ImageView
+                android:background="@drawable/black"
+                android:id="@+id/image3"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:layout_height="100dp"></ImageView>
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:background="@drawable/black"
+                android:layout_height="100dp"></ImageView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginLeft="7dp"
+        android:text="이 음식들은 안좋아요!"
+        android:fontFamily="@font/coustom_font"
+        android:textColor="@color/main_color"
+        ></TextView>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:id="@+id/image5"
+                android:layout_width="100dp"
+                android:background="@drawable/black"
+                android:layout_height="100dp"></ImageView>
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:background="@drawable/black"
+                android:layout_height="100dp"></ImageView>
+
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:layout_width="100dp"
+                android:background="@drawable/black"
+                android:layout_height="100dp"></ImageView>
+
+            <ImageView
+                android:id="@+id/image8"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/black"
+                android:layout_width="100dp"
+                android:layout_height="100dp"></ImageView>
+            <ImageView
+                android:id="@+id/image9"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/black"
+                android:layout_width="100dp"
+                android:layout_height="100dp"></ImageView>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
