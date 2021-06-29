@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+//food activity에서 사용할 adapter
 //리사이틀러뷰에 표시할 아이템 뷰 생성
 public class MainAdapter2 extends RecyclerView.Adapter<MainAdapter2.MainHolder> implements Filterable {
     private List<ItemList> mDataList;
