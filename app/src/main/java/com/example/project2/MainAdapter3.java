@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+//famous activity에서 사용할 adapter
 //리사이틀러뷰에 표시할 아이템 뷰 생성
 public class MainAdapter3 extends RecyclerView.Adapter<MainAdapter3.MainHolder> implements Filterable {
     private List<ItemList2> mDataList;
