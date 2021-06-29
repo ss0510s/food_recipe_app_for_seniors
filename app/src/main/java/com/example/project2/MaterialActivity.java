@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+//재료들을 보여줄 화면
 public class MaterialActivity extends AppCompatActivity implements MainAdapter.onItemListener {
 
     androidx.appcompat.widget.Toolbar toolbar;
@@ -50,6 +51,7 @@ public class MaterialActivity extends AppCompatActivity implements MainAdapter.o
         adapter.setOnClickListener(this);
     }
 
+    //재료 아이템 추가
     private void fillData(){
         itemList = new ArrayList<>();
         itemList.add(new ItemList(R.drawable.anchovy,"멸치"));
@@ -63,6 +65,8 @@ public class MaterialActivity extends AppCompatActivity implements MainAdapter.o
         itemList.add(new ItemList(R.drawable.radish,"무"));
         itemList.add(new ItemList(R.drawable.tomato,"토마토"));
     }
+
+    //메뉴 생성
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.menu, menu);
@@ -85,6 +89,8 @@ public class MaterialActivity extends AppCompatActivity implements MainAdapter.o
         });
         return super.onCreateOptionsMenu(menu);
     }
+
+    //아이템 클릭시 화면전환
     public void onItemClicked(int position) {
         Intent intent=new Intent(MaterialActivity.this, FoodActivity.class);
         intent.putExtra("material", position);
