@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-//효능에 따른 분류
+//효능에 따른 분류 화면
 public class EffectActivity extends AppCompatActivity implements MainAdapter.onItemListener{
     androidx.appcompat.widget.Toolbar toolbar;
     RecyclerView recyclerView;
