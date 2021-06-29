@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+//즐겨찾기
 public class CheckActivity extends AppCompatActivity {
 
     TextView textView;
