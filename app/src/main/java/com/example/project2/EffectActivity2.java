@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//효능에 따른 각각의 재료들과 레시피 추천
 public class EffectActivity2 extends AppCompatActivity {
 
     ImageView mainimage;
@@ -51,9 +52,11 @@ public class EffectActivity2 extends AppCompatActivity {
         image9=findViewById(R.id.image9);
         image10=findViewById(R.id.image10);
 
+        //이전 화면에서 다르게 넘겨받은 인수
         intent=getIntent();
         effect = intent.getIntExtra("effect", -1);
 
+        //인수에 따라 다르게 넘겨주는 내용들
         switch (effect) {
             case 0:
                 title.setText("혈액순환 효능");
@@ -100,6 +103,7 @@ public class EffectActivity2 extends AppCompatActivity {
                 image9.setImageResource(R.drawable.gosari);
                 image10.setImageResource(R.drawable.cabbage);
 
+                //이미지 클릭시 화면전환
                 image10.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
