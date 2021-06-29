@@ -2,22 +2,19 @@ package com.example.project2;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.inputmethod.EditorInfo;
-import android.widget.GridLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
+//재료에 따른 음식들을 보여주는 화면
 public class FoodActivity extends AppCompatActivity implements MainAdapter2.onItemListener{
 
     private Intent intent;
@@ -41,9 +38,12 @@ public class FoodActivity extends AppCompatActivity implements MainAdapter2.onIt
         getSupportActionBar().setDisplayShowCustomEnabled(true);    //툴바를 보여줌
         getSupportActionBar().setDisplayShowTitleEnabled(false);    //기본 제목을 없애줌
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        //인수를 받음
         intent = getIntent();
         material = intent.getIntExtra("material", -1);
 
+        //클릭시 다른 내용
         switch (material) {
             case 0:
                 title.setText("멸치");
@@ -62,18 +62,20 @@ public class FoodActivity extends AppCompatActivity implements MainAdapter2.onIt
     }
 
 
+    //리사이클러뷰로 각각의 item들 나열
     private void setUpRecyclerView() {
 
         itemList2 = new ArrayList<>();
         recyclerView = findViewById(R.id.recyclerView); //리사이클러뷰 참조
         gridLayoutManager = new GridLayoutManager(this,2);
-        recyclerView.setLayoutManager(gridLayoutManager);
+        recyclerView.setLayoutManager(gridLayoutManager); //그리드 배열
         fillData();
         adapter = new MainAdapter2(itemList2);
         recyclerView.setAdapter(adapter);
         adapter.setOnClickListener(this);
     }
 
+    //음식 리스트
     private void fillData(){
         itemList2 = new ArrayList<>();
         itemList2.add(new ItemList(R.drawable.cabbagejeon,"양배추전"));
