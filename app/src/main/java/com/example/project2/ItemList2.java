@@ -1,7 +1,7 @@
 package com.example.project2;
 
 public class ItemList2 {
-    private String main_text;//각 아이템 뷰에 들어갈 변수
+    private String main_text; //각 아이템 뷰에 들어갈 변수
     private String year;
     private String explain;
     private int main_image;
