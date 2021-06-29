@@ -16,6 +16,7 @@ import java.util.Locale;
 
 import static com.example.project2.R.drawable.*;
 
+//음식 레시피
 public class ItemActivity extends AppCompatActivity {
 
     androidx.appcompat.widget.Toolbar toolbar;
@@ -101,6 +102,7 @@ public class ItemActivity extends AppCompatActivity {
         });
 
 
+        //음식레시피 화면
         switch (item) {
             case 0:
                 title.setText("양배추전");
@@ -140,6 +142,7 @@ public class ItemActivity extends AppCompatActivity {
                 break;
         }
 
+        //클릭시 tts 효과
         textpro1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 tts.setPitch(1f);
@@ -188,6 +191,7 @@ public class ItemActivity extends AppCompatActivity {
         });
     }
 
+    //뒤로가기 버튼 효과
     public void onBackPressed() {
         super.onBackPressed();
         if(tts != null){
