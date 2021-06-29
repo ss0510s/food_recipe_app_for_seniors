@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+//intro 화면
 public class IntroActivity extends AppCompatActivity {
 
     Handler handler=new Handler();
