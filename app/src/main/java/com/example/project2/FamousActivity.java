@@ -15,8 +15,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+//유행하는 음식들
 public class FamousActivity extends AppCompatActivity implements MainAdapter3.onItemListener{
-
 
     androidx.appcompat.widget.Toolbar toolbar;
     RecyclerView recyclerView;
@@ -52,6 +52,7 @@ public class FamousActivity extends AppCompatActivity implements MainAdapter3.on
         adapter.setOnClickListener(this);
     }
 
+    //아이템 추가
     private void fillData(){
         itemList = new ArrayList<>();
         itemList.add(new ItemList2(R.drawable.gambas,"감바스", "20대","올리브 오일에 새우, 마늘, 페페론치노 등을 넣고 끓인 스페인 전채 요리(느끼할 수 있어요!)",R.drawable.gambas_blog,R.drawable.gambas_y));
@@ -59,6 +60,8 @@ public class FamousActivity extends AppCompatActivity implements MainAdapter3.on
         itemList.add(new ItemList2(R.drawable.mil,"밀푀유나베","3-40대","쌀에 김치를 섞어 지은 밥(기호에 따라 맵기를 조절하세요!)",R.drawable.mil_b,R.drawable.mil_y));
         itemList.add(new ItemList2(R.drawable.waffle,"와플팬요리","2-30대","밀가루에 야채를 주재료로 하여 와플팬 기계를 사용하여 지진 음식(느끼할 수 있어요!)",R.drawable.waffle_b,R.drawable.waffle_y));
     }
+
+    //메뉴 생성
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.menu, menu);
@@ -81,6 +84,8 @@ public class FamousActivity extends AppCompatActivity implements MainAdapter3.on
         });
         return super.onCreateOptionsMenu(menu);
     }
+
+    //아이템 클릭시 전환될 사이트
     public void onItemBlogClicked(int position) {
         switch (position) {
             case 0:
@@ -101,6 +106,8 @@ public class FamousActivity extends AppCompatActivity implements MainAdapter3.on
                 break;
         }
     }
+
+    //아이템클릭시 전환될 사이트
     public void onItemYoutubeClicked(int position) {
         switch (position) {
             case 0:
